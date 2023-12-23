@@ -1,19 +1,15 @@
-// Button widget demo, requires SPI display with touch screen
-
-// Requires widget library here:
-// https://github.com/Bodmer/TFT_eWidget
 #include <Preferences.h>
 #include <WiFi.h>
 #include <ESPmDNS.h>
 #include <PubSubClient.h>
 
 #include <FS.h>
-#include "Free_Fonts.h"  // Include the header file attached to this sketch
+#include "Free_Fonts.h"
 
-#include <TFT_eSPI.h>     // Hardware-specific library
-#include <TFT_eWidget.h>  // Widget library
+#include <TFT_eSPI.h>
+#include <TFT_eWidget.h>
 
-TFT_eSPI tft = TFT_eSPI();  // Invoke custom library
+TFT_eSPI tft = TFT_eSPI();
 
 #define CALIBRATION_FILE "/TouchCalData1"
 #define REPEAT_CAL false
@@ -23,12 +19,8 @@ ButtonWidget btnR = ButtonWidget(&tft);
 #define BUTTON_W 100
 #define BUTTON_H 50
 
-// Create an array of button instances to use in for() loops
-// This is more useful where large numbers of buttons are employed
 ButtonWidget *btn[] = { &btnR };
-;
 uint8_t buttonCount = sizeof(btn) / sizeof(btn[0]);
-
 
 // MQTT Broker
 const char *mqtt_broker = "mqtt.local";
