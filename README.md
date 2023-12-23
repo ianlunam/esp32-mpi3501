@@ -38,6 +38,7 @@ These took some working out. The above two reference documents each had some par
 ## ESP32 Connections
 
 | ESP32 Pin | Display Pin |
+| --------- | ----------- |
 | D23 | #19 Touch Panel Input MOSI |
 | D22 | #26 Touch Panel Touch Panel Chip Select TP_CS |
 | D19 | #21 Touch Panel Output MISO |
