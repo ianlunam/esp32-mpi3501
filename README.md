@@ -67,7 +67,6 @@ Entirely based on the examples from TFT_eSPI, PubSubClient and some others I don
 
 * Within TFT_eSPI Arduino library, copy `User_Setups/Setup11_RPi_touch_ILI9486.h` over `User_Setup.h`
 * [My code](TouchScreen/TouchScreen.ino)
-
 * State Stream setup in Home Assistant's `configuration.yaml`
 
 ```yaml
@@ -86,5 +85,5 @@ mqtt_statestream:
 
 
 [def]: https://cdn.awsli.com.br/945/945993/arquivos/MPI3501-3.5inch-RPi-Display-User-Manual-V1.0.pdf
-[def2]: https://www.lunam.org/mpi3501-esp32.html
+[def2]: http://www.lcdwiki.com/3.5inch_RPi_Display
 [def3]: https://github.com/Bodmer/TFT_eSPI/blob/master/User_Setups/Setup11_RPi_touch_ILI9486.h
